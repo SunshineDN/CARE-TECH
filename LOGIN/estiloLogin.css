@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+
+body {
+    min-height: 400px;
+    background-color: #FDA82B;
+    background-image: url("../bg.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.header-title, #email, #password, label, .forgot, #logarBtn, .nonUser {
+    font-family: 'Jost', sans-serif;
+}
+
+.container {
+    margin: 0 35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    flex-wrap: wrap;
+}
+
+.subcontainer {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    row-gap: 50px;
+}
+
+header {
+    text-align: center;
+    font-size: 28pt;
+}
+
+.wrapper-inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+.subwrapper-inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+.subwrapper-remember {
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+}
+
+.container-icons {
+    display: flex;
+    flex-direction: column;
+}
+
+.icons {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+}
