@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+
+.listTitle {
+    font-family: 'Jost', sans-serif;
+}
+
+body {
+    min-height: 400px;
+    background-image: url(bg-main.png);
+    background-color: #F5EFED;
+    background-repeat: no-repeat;
+    background-position: 0 -90px;
+}
+
+.logo {
+    height: 54px;
+}
+
+.logoName {
+    height: 21px;
+    width: 167px;
+}
+
+.containerSection1 {
+    display: flex;
+}
+
+.containerHeader {
+    display: flex;
+}
+
+.subcontainerHeader {
+    display: flex;
+    align-items: center;
+}
+
+.leftTop {
+    display: flex;
+}
+
+.containerList {
+    display: flex;
+    flex-flow: row nowrap;
+    column-gap: 15px;
+}
