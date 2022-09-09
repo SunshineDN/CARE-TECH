@@ -1,5 +1,7 @@
+/* Importing font from google fonts api */
 @import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
 
+/* All body */
 body {
     min-height: 400px;
     background-color: #FDA82B;
@@ -10,20 +12,23 @@ body {
     background-attachment: fixed;
 }
 
+/* Set all text in font-family */
 .header-title, #email, #password, label, .forgot, #logarBtn, .nonUser {
     font-family: 'Jost', sans-serif;
 }
 
+/* Section container */
 .container {
     margin: 0 35px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    height: 100vh;
+    align-items: flex-end;
+    height: 85vh;
     flex-wrap: wrap;
 }
 
+/* Div subcontainer - box - */
 .subcontainer {
     background-color: #fff;
     display: flex;
@@ -31,37 +36,141 @@ body {
     justify-content: center;
     align-items: center;
     width: fit-content;
-    row-gap: 50px;
+    row-gap: 30px;
+    border-radius: 40px;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.626);
+    border: 2px solid #FC7022;
+    padding: 180px 80px 50px 80px;
 }
 
-header {
+/* Header page title */
+.header-title {
     text-align: center;
-    font-size: 28pt;
+    font-size: 39pt;
+    color: #010159;
 }
 
+/* Container inputs and checkbox */
 .wrapper-inputs {
     display: flex;
     flex-direction: column;
 }
 
+/* Subcontainer inputs */
 .subwrapper-inputs {
+    margin-top: 40px;
     display: flex;
     flex-direction: column;
+    row-gap: 45px;
 }
 
+/* Inputs */
+#email, #password {
+    height: calc(60px - 6px);
+    width: calc(350px - 8px);
+    border-radius: 100px;
+    border: 2px solid #FC7022;
+    font-size: 20pt;
+    transition: all 0.2s ease-in-out;
+}
+
+#email::placeholder, #password::placeholder {
+    color: #CCC4C1;
+    font-size: 20pt;
+    padding-left: 10px;
+}
+
+#email:focus, #password:focus {
+    border-color: #0092DD;
+    outline: none;
+}
+/* =============== */
+
+/* Checkbox class */
 .subwrapper-remember {
     display: flex;
     flex-direction: row;
-    column-gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
 }
 
+/* Container login button and icons */
 .container-icons {
     display: flex;
     flex-direction: column;
 }
 
-.icons {
-    margin-top: 20px;
+/* Button style */
+#logarBtn:enabled {
+    height: 60px;
+    width: 350px;
+    border-radius: 100px;
+    border: none;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color: #0092DD;
+    font-size: 28pt;
+    transition: all 0.25s;
+}
+
+#logarBtn:enabled:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+#logarBtn:enabled:active {
+    transform: scale(1);
+    background-color: #0077b3;
+    color: rgb(212, 212, 212);
+}
+
+#logarBtn:disabled {
+    height: 60px;
+    width: 350px;
+    border-radius: 100px;
+    border: none;
+    text-align: center;
+    font-size: 28pt;
+    color: rgba(0, 0, 0, 0.313);
+    transition: all 0.25s;
+}
+
+/* All labels */
+label {
+    color: #6A82FF;
+}
+
+/* Forgot Pass and Not a user - style */
+.forgot, .nonUser {
+    text-decoration: underline;
+    color: #6A82FF;
+}
+
+/* Subcontainer icons */
+.icons-area {
+    margin: 30px 0 20px 0;
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    column-gap: 40px;
+}
+
+/* Icons */
+.icons {
+    height: 35px;
+    transition: all 0.35s;
+}
+
+.icons:hover {
+    transform: translateY(-10px);
+}
+/* ================ */
+
+/* Logo image */
+.logo {
+    height: 100px;
+    position: relative;
+    left: 200px;
+    margin-right: 200px;
 }

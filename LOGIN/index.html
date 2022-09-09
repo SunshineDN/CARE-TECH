@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Faça seu login</title>
+    <title>Login - Care Tech</title>
+    <script src="scriptLogin.js" defer></script>
     <link rel="stylesheet" href="../reset.css">
     <link rel="stylesheet" href="estiloLogin.css">
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
@@ -18,26 +19,28 @@
             </header>
             <div class="wrapper-inputs">
                 <div class="subwrapper-inputs">
-                    <input type="email" name="email" id="email" placeholder="Email">
+                    <input type="email" name="email" id="email" placeholder="Email" oninput="Verificar()">
                     <input type="password" name="password" id="password" placeholder="Senha">
                 </div>
                 <div class="subwrapper-remember">
-                    <label for="remember"><input type="checkbox" name="remember" id="remember"> Lembrar-me</label>
-                    <a href="#" target="_blank" rel="noopener noreferrer" class="forgot">Esqueci a senha</a>
+                    <label for="remember">
+                        <input type="checkbox" name="remember" id="remember"> Lembrar-me
+                    </label>
+                    <a href="#" class="forgot" onclick="ForgotPass()">Esqueci a senha</a>
                 </div>
             </div>
             <div class="container-icons">
-                <button type="submit" id="logarBtn">Logar</button>
-                <div class="icons">
-                    <a href="#"><img src="../Ícones/Component 1.png" alt="logo da google"></a>
-                    <a href="#"><img src="../Ícones/62487-bluetie-icons-computer-facebook-login-icon-email 1.png" alt="logo do facebook"></a>
-                    <a href="#"><img src="../Ícones/clipart2024262 1.png" alt="logo do twitter"></a>
+                <button type="submit" id="logarBtn" onclick="Login()" disabled>Logar</button>
+                <div class="icons-area">
+                    <a href="#"><img src="../Ícones/google-37.svg" alt="logo da google" class="icons"></a>
+                    <a href="#"><img src="../Ícones/facebook-13.svg" alt="logo do facebook" class="icons"></a>
+                    <a href="#"><img src="../Ícones/twitter-113.svg" alt="logo do twitter" class="icons"></a>
                 </div>
             </div>
-            <a href="#" class="nonUser">Não sou usuário ainda →</a>
+            <a href="../CADASTRO/register.html" class="nonUser">Não sou usuário ainda →</a>
         </div>
         <footer>
-            <img src="../PNG/logo.png" alt="Logo da Care Tech">
+            <img src="../PNG/logo.png" alt="Logo da Care Tech" class="logo">
         </footer>        
     </section>
 
